@@ -1,0 +1,86 @@
+.blog--section .header--blogs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.blog--section .header--blogs .heading--side .heading-2 {
+    margin-bottom: 20px;
+}
+
+.blog--section .header--blogs .heading--side .sub-heading {
+    font-size: 24px;
+    color: #848281;
+}
+
+.blog--section .header--blogs .category--filter--btn button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    color: #848281;
+    background: #FBFAF9;
+    font-size: clamp(18px, 2vw, 20px);
+    cursor: pointer;
+}
+
+.blog--section .header--blogs .category--filter--btn button.active {
+    background: #EAEAEA;
+    color: #343433;
+}
+
+.blog--lists .post--item {
+    display: flex;
+    border-bottom: 1px solid #F2F0ED;
+    padding: clamp(40px, 6vw, 100px) 0px;
+}
+
+.blog--lists .post--item .heading-blog {
+    max-width: 480px;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.blog--lists .post--item .date-blog {
+    max-width: 250px;
+    width: 100%;
+    padding-right: clamp(30px, 3vw, 50px);
+}
+
+.blog--lists .post--item .description-blog {
+    width: 100%;
+    color: #474645;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.blog--lists .post--item .heading-blog h3 {
+    font-size:clamp(32px, 3vw, 40px);
+    line-height: normal;
+    color: #343433;
+    margin-bottom: 20px;
+}
+
+.blog--lists .post--item .heading-blog p {
+    color: #848281;
+    font-size: clamp(18px, 2vw, 20px);
+}
+
+.blog--lists .post--item .date-blog p {
+    color: #848281;
+    font-size: clamp(18px, 2vw, 20px);
+}
+
+
+@media(max-width: 991px) {
+
+    .blog--section .header--blogs {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: flex-start;
+    }
+
+    .blog--lists .post--item {
+        flex-direction: column;
+    }
+}
