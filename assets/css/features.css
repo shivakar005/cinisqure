@@ -86,11 +86,19 @@
     gap: 30px;
 }
 
-.features--container .features--row .features--lists .features--list--content ul li .features--list--icon {min-width: 70px;opacity: 0.4;}
+.features--container .features--row .features--lists .features--list--content ul li .features--list--icon {min-width: 70px;}
 
 .features--container .features--row .features--lists .features--list--content ul li .features--list--text h3 {
     margin-bottom: 10px;
     font-size: 24px;
+}
+
+.features--container .features--row .features--lists .features--list--content ul li .features--list--text h3 > .comingsoon {
+    font-size: 14px;
+    background: #FAFAFA;
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: #999999;
 }
 
 .features--container .features--row .features--lists .features--list--content ul li .features--list--text p {

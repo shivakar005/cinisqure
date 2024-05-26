@@ -89,7 +89,7 @@
 .features--content--div>.features--content--div--item {
     background: var(--graylight2);
     border-radius: 15px;
-    padding: 20px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -99,6 +99,7 @@
 .features--content--div>.features--content--div--item>.item--content {
     width: 100%;
     max-width: 335px;
+    padding: 20px;
 }
 
 .features--content--div>.features--content--div--item>.item--content>.content--feature {
@@ -113,6 +114,10 @@
 .features--content--div>.features--content--div--item>.item--image {
     width: 100%;
     text-align: center;
+}
+
+.features--content--div>.features--content--div--item>.item--image > img{
+    width: 100%;
 }
 
 .features--rows .features--col--item .item--content .content--feature {
@@ -537,6 +542,7 @@
     .banner--div {
         flex-direction: column;
         position: relative;
+        overflow: hidden;
     }
 
     .banner--div .banner--img {
@@ -547,13 +553,13 @@
         z-index: -1;
     }
 
-    .banner--div div:nth-child(1) {
-        left: 0px;
+    .banner--div > div:nth-child(1) {
+        left: -20%;
         top: 0px;
     }
 
-    .banner--div div:nth-child(3) {
-        right: 0px;
+    .banner--div > div:nth-child(3) {
+        right: -20%;
         top: 0px;
     }
 
