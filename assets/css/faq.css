@@ -3,7 +3,7 @@
     padding: 0 15px;
     max-width: 1310px;
     margin: 0 auto;
-    width: 100%;
+    width: 93%;
 }
 
 .faq--container .faq--row .faq-head {
@@ -15,7 +15,7 @@
 }
 
 .faq--container .faq--row .faq--list--container .faq--list .faq--list--item .faq--list--item--head .heading-3 {
-    font-size: clamp(24px, 2vw, 28px);
+    font-size: clamp(18px, 2vw, 24px);
     padding: clamp(20px, 3vw, 50px) 0px;
     border-bottom: 1px solid #F2F0ED;
     border-top: 1px solid #F2F0ED;
@@ -64,7 +64,7 @@
 }
 
 .faq--container .faq--row .faq--list--container .faq--list .faq--list--item .faq--content .content--item-faq {
-    font-size: clamp(18px, 2vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
     transition: 0.3s;
 }
 
@@ -86,7 +86,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: 24px;
+    font-size: clamp(16px, 2vw, 24px);
     gap: 10px;
     color: #FF3E00;
     margin-top: clamp(20px, 3vw, 50px);
@@ -100,5 +100,9 @@
         flex-direction: column;
         row-gap: 20px;
         align-items: flex-start;
+    }
+
+    .faq--container .faq--row .faq--list--container .faq--link>img {
+        width: 16px;
     }
 }

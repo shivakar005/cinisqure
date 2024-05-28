@@ -12,7 +12,7 @@
     max-width: clamp(350px, 30vw, 560px);
     width: 100%;
     text-align: center;
-    font-size: clamp(18px,2vw,20px);
+    font-size: clamp(16px,2vw,20px);
     padding: clamp(10px,1vw,20px);
     
 }
@@ -32,7 +32,7 @@
 .main--footer .footer--container .footer--left .footer--menu {}
 
 .main--footer .footer--container .footer--left .footer--menu h4 {
-    font-size: clamp(18px,2vw,20px);
+    font-size: clamp(16px,2vw,20px);
 }
 
 .main--footer .footer--container .footer--left .footer--menu ul {
@@ -46,7 +46,7 @@
 .main--footer .footer--container .footer--left .footer--menu ul li a {
     text-decoration: none;
     color: rgb(71 70 69 / 70%);
-    font-size: 18px;
+    font-size: 16px;
 }
 
 @media (max-width: 991px){

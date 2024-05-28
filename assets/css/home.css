@@ -103,11 +103,11 @@
 }
 
 .features--content--div>.features--content--div--item>.item--content>.content--feature {
-    font-size: clamp(18px, 2vw, 20px);
+    font-size: clamp(15px, 2vw, 20px);
 }
 
 .features--content--div>.features--content--div--item>.item--content .head--feature {
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -116,12 +116,12 @@
     text-align: center;
 }
 
-.features--content--div>.features--content--div--item>.item--image > img{
+.features--content--div>.features--content--div--item>.item--image>img {
     width: 100%;
 }
 
 .features--rows .features--col--item .item--content .content--feature {
-    font-size: clamp(20px, 2vw, 28px);
+    font-size: clamp(16px, 2vw, 25px);
     line-height: 1.3;
 }
 
@@ -175,7 +175,7 @@
 
 .features--rows .features--col--item .item--content .items--features .item--features--item {
     gap: 10px;
-    font-size: clamp(18px, 2vw, 24px);
+    font-size: clamp(15px, 2vw, 21px);
     line-height: normal;
 }
 
@@ -224,7 +224,7 @@
 }
 
 .blog--container .blog--head p {
-    font-size: clamp(20px, 2vw, 28px);
+    font-size: clamp(16px, 2vw, 28px);
     line-height: 1.3;
     margin-top: 40px;
 }
@@ -253,7 +253,7 @@
 }
 
 .blog--container .blog--items .blog--item .blog--area-content .blog--item--content {
-    font-size: clamp(20px, 2vw, 28px);
+    font-size: clamp(16px, 2vw, 24px);
     color: #474645;
     line-height: 1.3;
 }
@@ -266,7 +266,7 @@
 }
 
 .blog--container .blog--items .blog--item {
-    margin-bottom: 50px;
+    margin-bottom: clamp(20px, 3vw, 50px);
 }
 
 .blog--container .blog--items .blog--item .blog--item--img>img {
@@ -378,7 +378,7 @@
 
 .testimonial--container .testimonial--header .testimonial--follow-link {
     padding-top: 20px;
-    font-size: 24px;
+    font-size: clamp(16px,2vw,24px);
     cursor: pointer;
 }
 
@@ -388,7 +388,7 @@
     padding: 0 15px;
     max-width: 1310px;
     margin: 0 auto;
-    width: 100%;
+    width: 93%;
 }
 
 .faq--container .faq--row .faq-head {
@@ -400,7 +400,7 @@
 }
 
 .faq--container .faq--row .faq--list--container .faq--list .faq--list--item .faq--list--item--head .heading-3 {
-    font-size: clamp(24px, 2vw, 28px);
+    font-size: clamp(18px, 2vw, 24px);
     padding: clamp(20px, 3vw, 50px) 0px;
     border-bottom: 1px solid #F2F0ED;
     border-top: 1px solid #F2F0ED;
@@ -449,7 +449,7 @@
 }
 
 .faq--container .faq--row .faq--list--container .faq--list .faq--list--item .faq--content .content--item-faq {
-    font-size: clamp(18px, 2vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
     transition: 0.3s;
 }
 
@@ -471,7 +471,7 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: 24px;
+    font-size: clamp(16px, 2vw, 24px);
     gap: 10px;
     color: #FF3E00;
     margin-top: clamp(20px, 3vw, 50px);
@@ -494,7 +494,7 @@
 
 .explore--container {
     background: #FBFAF9;
-    padding: clamp(40px,6vw,100px) 0px;
+    padding: clamp(40px, 6vw, 100px) 0px;
 }
 
 .explore--container .explore-row .explore--head {
@@ -553,18 +553,18 @@
         z-index: -1;
     }
 
-    .banner--div > div:nth-child(1) {
+    .banner--div>div:nth-child(1) {
         left: -20%;
         top: 0px;
     }
 
-    .banner--div > div:nth-child(3) {
+    .banner--div>div:nth-child(3) {
         right: -20%;
         top: 0px;
     }
 
     .banner--div .banner--content {
-        width: 95%;
+        width: 93%;
         max-width: 550px;
     }
 
@@ -605,7 +605,8 @@
         flex-direction: column;
         gap: 10px;
     }
-    .features--rows .features--col--item .item--content .items--features .item--features--item > img {
+
+    .features--rows .features--col--item .item--content .items--features .item--features--item>img {
         width: 20px;
     }
 
@@ -641,16 +642,25 @@
         align-items: center;
     }
 
-    .faq--container .faq--row, .explore--container .explore-row {
+    .faq--container .faq--row,
+    .explore--container .explore-row {
         flex-direction: column;
         row-gap: 20px;
         align-items: flex-start;
     }
-    .explore--container .explore-row .explore--icons {justify-content: flex-start;}
+
+    .explore--container .explore-row .explore--icons {
+        justify-content: flex-start;
+    }
 
     .explore--container .explore-row .explore--icons .explore--icons--list {
         justify-items: center;
     }
-    
-    
+
+
+    .faq--container .faq--row .faq--list--container .faq--link>img, .testimonial--container .testimonial--header .testimonial--follow-link img {
+        width: 16px;
+    }
+
+
 }
